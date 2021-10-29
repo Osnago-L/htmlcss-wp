@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -35,8 +35,8 @@ nav li{
 nav a{
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 12px;
-    font-weight: bolder;
+    font-size: 10px;
+    font-weight: 500;
     color: #939393; 
 }
 nav a:hover{
@@ -48,7 +48,7 @@ nav a:hover{
     background-size: cover;
     background-position: center;
     height: 350px;
-    margin: 30px 0;
+    margin: 25px 0;
     border-radius: 15px 15px;
     position: relative;
 }
@@ -60,29 +60,62 @@ nav a:hover{
     color: white;
 
 }
-/* float images/texts  */
-.b_head_main{
-    height: 60px;
-    background-color: #abcfe7;
+/* body title  */
+.title_body{
+    margin-bottom: 20px;
 }
-.b_main{
-    height: 400px;
-    background-color: #0086ff;
+
+.title_body h1{
+    font-size: 25px; 
+    font-weight:700;
+    color: black;
+    
+    }
+.title_body span{
+    font-size: 10px;
+    font-weight: 400;
+    color: #939393; 
+    line-height: 0;
+}
+/* float images/texts */
+.preview_l,.preview_c,.preview_r{
+    height: 150px;
+    width: 100%;
+    border-radius: 15px 15px;
+}
+.preview_l{
+    background-image: url("../img/img-1.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.preview_c{
+    background-image: url("../img/banner-2.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.preview_r{
+    background-image: url("../img/img-2.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.body_text{
     padding: 10px 0;
 }
 
-.b_main div {
+.body_left,.body_right,.body_centre {
     float: left;
-    background-color:#abcfe7 ;
     height: 100%;
 
 }
-.b_left,.b_right{
+.body_left,.body_right{
     width: 20%;
     
     
 }
-.b_centre{
+.body_centre{
     width: 57%;
     margin: 0 1.5%;
     
@@ -90,7 +123,7 @@ nav a:hover{
 
 
 
-.b_main::after{
+.body_text::after{
     content: "";
     clear: both;
     display: table;
