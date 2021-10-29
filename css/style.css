@@ -52,7 +52,7 @@ nav a:hover{
     border-radius: 15px 15px;
     position: relative;
 }
-.main_photo::before{
+.overlay::before{
     content: "";
     position: absolute; 
     border-radius: 15px 15px;
@@ -60,7 +60,7 @@ nav a:hover{
     left: 0;
     right: 0;
     bottom: 0; 
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.2)
 }
 .main_text{
     position: absolute;
@@ -73,7 +73,6 @@ nav a:hover{
 
 }
 .main_text p:nth-child(2) {
-    
     font-size: 10px;
 }
 /* body title  */
@@ -85,46 +84,40 @@ nav a:hover{
     font-size: 25px; 
     font-weight:700;
     color: black;
-    
+    line-height: 20px;
     }
 .title_body span{
     font-size: 10px;
     font-weight: 400;
     color: #939393; 
-    line-height: 0;
+    
 }
 /* float images/texts */
-.preview_l,.preview_c,.preview_r{
+.preview_size{
     height: 150px;
     width: 100%;
     border-radius: 15px 15px;
-    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 .preview_l{
     background-image: url("../img/img-1.jpg");
-    background-size: cover;
-    background-position: center;
-
 }
 .preview_c{
     background-image: url("../img/banner-2.jpg");
-    background-size: cover;
-    background-position: center;
-
 }
 .preview_r{
     background-image: url("../img/img-2.jpg");
-    background-size: cover;
-    background-position: center;
-
 }
 .body_text{
     padding: 10px 0;
 }
 
-.body_left,.body_right,.body_centre {
+.body_text>div {
     float: left;
     height: 100%;
+    
 
 }
 .body_left,.body_right{
