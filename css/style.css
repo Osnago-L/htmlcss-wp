@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+.brightness{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
 
 body{
     max-width: 800px;
@@ -39,12 +43,24 @@ nav a:hover{
     text-decoration-line: underline
 }
 /* main photo  */
-.y_main{
-   
-    height: 310px;
-    margin: 20px 0;
+.main_photo {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    margin: 30px 0;
+    border-radius: 15px 15px;
+    position: relative;
 }
-/* body images and text  */
+.main_text{
+    position: absolute;
+    bottom: 20%;
+    margin-left: 40px;
+    width: 50%;
+    color: white;
+
+}
+/* float images/texts  */
 .b_head_main{
     height: 60px;
     background-color: #abcfe7;
